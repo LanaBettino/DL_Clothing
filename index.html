@@ -1,0 +1,912 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0b0b0d">
+    <link rel="manifest" href="./manifest.webmanifest">
+
+    <meta name="description" content="Shop the DeLEGACY collection. Local roots. Modern minds. Bigger dreams.">
+    <meta property="og:title" content="DeLEGACY — Move with purpose">
+    <meta property="og:description" content="Discover the DL collection.">
+
+    <title>DeLEGACY — Move with purpose</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./collection.css">
+</head>
+
+<body>
+
+    <div class="accent-line"></div>
+
+    <div class="announcement-bar" id="announcementBar">
+        LOCAL ROOTS. MODERN MINDS. BIGGER DREAMS.
+    </div>
+
+    
+    <header class="site-header">
+
+        <button class="icon-btn mobile-menu" id="mobileMenuBtn" aria-label="Open menu">
+            ☰
+        </button>
+
+        <a class="brand" href="#top" aria-label="DeLEGACY home">
+            <span class="brand-mark brand-mark-image">
+                <img src="./dl-logo.png" alt="DL logo">
+            </span>
+
+            <span class="brand-word">
+                DELEGACY
+                <small>MOVE WITH PURPOSE</small>
+            </span>
+        </a>
+
+        <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+            <a href="#shop" data-scroll="shop">Shop all</a>
+            <a href="#vests" data-scroll="vests">Vests</a>
+            <a href="#tees" data-scroll="tees">Tees</a>
+            <a href="#story" data-scroll="story">Our story</a>
+        </nav>
+
+        <div class="header-actions">
+
+            <button class="icon-btn search-toggle" id="searchToggle" aria-label="Search">
+                ⌕
+            </button>
+
+            <button class="icon-btn" id="accountBtn" aria-label="Account">
+                ♙
+            </button>
+
+            <button class="icon-btn" id="wishlistBtn" aria-label="Wishlist">
+                ♡
+                <span class="tiny-count" id="wishCount">0</span>
+            </button>
+
+            <button class="cart-trigger" id="cartBtn">
+                BAG <span id="cartCount">0</span>
+            </button>
+
+        </div>
+    </header>
+
+    
+    <div class="search-panel" id="searchPanel" hidden>
+        <div class="search-inner">
+            <span>⌕</span>
+
+            <input
+                id="siteSearch"
+                type="search"
+                placeholder="Search vests and tees..."
+                autocomplete="off"
+            >
+
+            <button id="closeSearch" aria-label="Close search">
+                ✕
+            </button>
+
+            <div class="search-suggestions" id="searchSuggestions"></div>
+        </div>
+    </div>
+
+    <main id="top">
+        <div id="homeView">
+
+        
+        <section class="hero" aria-label="DeLEGACY campaign">
+
+            <video
+                class="hero-video"
+                autoplay
+                muted
+                loop
+                playsinline
+                poster="./picture2.jpeg"
+            >
+                <source src="./video1.mp4" type="video/mp4">
+                Your browser does not support HTML video.
+            </video>
+
+            <div class="hero-shade"></div>
+
+            <div class="hero-content reveal">
+
+                <p class="eyebrow" id="heroEyebrow">
+                    THE DELEGACY COLLECTION <span></span>
+                </p>
+
+                <h1 id="heroTitle">
+                    Move with<br><em>purpose.</em>
+                </h1>
+
+                <p id="heroText">
+                    Built for the everyday journey.
+                    Discover the pieces that carry the DL spirit.
+                </p>
+
+                <a class="button button-light" href="#shop" id="heroButton">
+                    Shop the collection
+                </a>
+
+            </div>
+
+            <div class="hero-bottom">
+                <span>01 / THE COLLECTION</span>
+                <span>LOCAL ROOTS — GLOBAL AMBITION</span>
+                <span class="scroll-cue">SCROLL TO EXPLORE ↓</span>
+            </div>
+
+            <div class="hero-side-mark">
+                DL<span>®</span>
+            </div>
+
+        </section>
+
+        
+        <section class="ticker" aria-label="Brand statement">
+
+            <div class="ticker-track">
+                <span>MOVE WITH PURPOSE</span>
+                <span>LOCAL ROOTS</span>
+                <span>MODERN MINDS</span>
+                <span>BIGGER DREAMS</span>
+                <span>MOVE WITH PURPOSE</span>
+                <span>LOCAL ROOTS</span>
+                <span>MODERN MINDS</span>
+                <span>BIGGER DREAMS</span>
+            </div>
+
+        </section>
+
+        
+        <section class="section shop-section" id="shop">
+
+            <div class="section-heading reveal">
+                <div>
+                    <p class="eyebrow dark-eyebrow">THE COLLECTION / 001</p>
+                    <h2>Two ways to <em>move.</em></h2>
+                </div>
+                <p class="section-intro">
+                    Vests for the work. A tee for everything else.<br>
+                    Black, built around the DL mark.
+                </p>
+            </div>
+
+            
+            <div class="category-tiles">
+                <a class="category-tile reveal" href="#vests" data-scroll="vests">
+                    <img src="./vests-lineup.png" alt="DeLEGACY men's and women's vests" loading="lazy">
+                    <span class="tile-label"><small>01</small><b>Vests</b><em id="vestTileCount">2 styles · Men &amp; Women</em></span>
+                </a>
+                <a class="category-tile reveal" href="#tees" data-scroll="tees">
+                    <img src="./ambassador-walk.png" alt="DeLEGACY tee worn by our brand ambassador" loading="lazy">
+                    <span class="tile-label"><small>02</small><b>Tees</b><em id="teeTileCount">1 style · Unisex</em></span>
+                </a>
+            </div>
+
+            
+            <div class="collection-block" id="vests">
+                <div class="block-head">
+                    <h3>Vests</h3>
+                    <span id="vestCount">2 pieces</span>
+                </div>
+                <div class="product-grid" id="vestGrid" aria-live="polite"></div>
+                <figure class="lineup reveal">
+                    <img src="./vests-lineup.png" alt="Men's vest front and back, women's vest front and back" loading="lazy">
+                    <figcaption>Men's front &amp; back · Women's front &amp; back</figcaption>
+                </figure>
+            </div>
+
+            
+            <div class="collection-block" id="tees">
+                <div class="block-head">
+                    <h3>Tees</h3>
+                    <span id="teeCount">1 piece</span>
+                </div>
+                <div class="tee-feature">
+                <div class="product-grid" id="teeGrid" aria-live="polite"></div>
+
+
+                <div class="ambassador">
+                    <div class="ambassador-head reveal">
+                        <p class="eyebrow dark-eyebrow">WORN BY OUR BRAND AMBASSADOR</p>
+                        <h4>The tee in the <em>wild.</em></h4>
+                    </div>
+                    <div class="ambassador-grid">
+                        <a class="amb-card amb-tall reveal" href="#/product/dl-tee"><img src="./ambassador-walk.png" alt="Brand ambassador wearing the DL tee, back view" loading="lazy"></a>
+                        <a class="amb-card reveal" href="#/product/dl-tee"><img src="./ambassador-run.jpg" alt="Brand ambassador running in the DL tee" loading="lazy"></a>
+                        <a class="amb-card reveal" href="#/product/dl-tee"><img src="./tee-front-detail.jpg" alt="Front of the DL tee with the DE LEGACY mark" loading="lazy"></a>
+                        <a class="amb-card amb-wide reveal" href="#/product/dl-tee"><img src="./tee-back-worn.jpg" alt="Back of the DL tee worn by our brand ambassador" loading="lazy"></a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="empty-state" id="emptyProducts" hidden>
+                <h3>No pieces found.</h3>
+                <p>Try a different search.</p>
+                <button class="outline-btn" id="resetShop">Reset shop</button>
+            </div>
+
+        </section>
+
+        
+        <section class="editorial-section" id="story">
+
+            <div class="editorial-image reveal">
+
+                <img
+                    src="./picture2.jpeg"
+                    alt="DeLEGACY campaign portrait"
+                    loading="lazy"
+                >
+
+                <span class="image-index">DL / 2026</span>
+
+            </div>
+
+            <div class="editorial-copy reveal">
+
+                <p class="eyebrow dark-eyebrow">
+                    OUR POINT OF VIEW / 002
+                </p>
+
+                <h2 id="storyTitle">
+                    More than<br>what you <em>wear.</em>
+                </h2>
+
+                <p id="storyText">
+                    DeLEGACY is about the journey, the community
+                    and the confidence to keep moving.
+                    Local roots. Modern minds. Bigger dreams.
+                </p>
+
+                <a href="#community" class="underlined-link">
+                    THE DL COMMUNITY
+                </a>
+
+                <div class="editorial-number">
+                    02<span> / 04</span>
+                </div>
+
+            </div>
+
+        </section>
+
+        
+        <section class="campaign-section" id="community">
+
+            <div class="campaign-heading reveal">
+
+                <p class="eyebrow dark-eyebrow">
+                    THE PEOPLE BEHIND THE MARK / 003
+                </p>
+
+                <h2>
+                    Made for the <em>movement.</em>
+                </h2>
+
+                <p>
+                    Style is personal. Community is everything.
+                </p>
+
+            </div>
+
+            <div class="campaign-grid">
+
+                
+                <figure class="campaign-card tall reveal">
+
+                    <video
+                        autoplay
+                        muted
+                        loop
+                        playsinline
+                        preload="metadata"
+                        poster="./picture5.jpeg"
+                    >
+                        <source src="./video4.mp4" type="video/mp4">
+                    </video>
+
+                    <figcaption>
+                        <span>01 / THE DETAILS</span>
+                        <b>THE MARK SPEAKS.</b>
+                    </figcaption>
+
+                </figure>
+
+                
+                <figure class="campaign-card reveal">
+
+                    <img
+                        src="./picture6.jpeg"
+                        alt="The DeLEGACY community together"
+                        loading="lazy"
+                    >
+
+                    <figcaption>
+                        <span>02 / THE PEOPLE</span>
+                        <b>BETTER TOGETHER.</b>
+                    </figcaption>
+
+                </figure>
+
+                
+                <figure class="campaign-card reveal">
+
+                    <video
+                        autoplay
+                        muted
+                        loop
+                        playsinline
+                        preload="metadata"
+                        poster="./picture4.jpeg"
+                    >
+                        <source src="./video5.mp4" type="video/mp4">
+                    </video>
+
+                    <figcaption>
+                        <span>03 / THE JOURNEY</span>
+                        <b>KEEP SHOWING UP.</b>
+                    </figcaption>
+
+                </figure>
+
+                
+                <figure class="campaign-card reveal">
+
+                    <video
+                        autoplay
+                        muted
+                        loop
+                        playsinline
+                        preload="metadata"
+                        poster="./picture6.jpeg"
+                    >
+                        <source src="./video2.mp4" type="video/mp4">
+                    </video>
+
+                    <figcaption>
+                        <span>04 / THE COMMUNITY</span>
+                        <b>THIS IS DELEGACY.</b>
+                    </figcaption>
+
+                </figure>
+
+                
+                <figure class="campaign-card reveal">
+
+                    <video
+                        autoplay
+                        muted
+                        loop
+                        playsinline
+                        preload="metadata"
+                        poster="./picture6.jpeg"
+                    >
+                        <source src="./video3.mp4" type="video/mp4">
+                    </video>
+
+                    <figcaption>
+                        <span>05 / THE CREW</span>
+                        <b>BETTER IN MOTION.</b>
+                    </figcaption>
+
+                </figure>
+
+            </div>
+
+            <div class="campaign-cta">
+
+                <span>
+                    LOCAL ROOTS. MODERN MINDS. BIGGER DREAMS.
+                </span>
+
+                <a href="#shop" class="button button-dark">
+                    Shop the pieces
+                </a>
+
+            </div>
+
+        </section>
+
+        
+        <section class="feature-strip">
+
+            <div class="feature-item">
+                <span class="feature-icon">01</span>
+
+                <div>
+                    <b>Made to move</b>
+                    <small>Everyday comfort and confidence.</small>
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <span class="feature-icon">02</span>
+
+                <div>
+                    <b>Thoughtful details</b>
+                    <small>DL identity in every detail.</small>
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <span class="feature-icon">03</span>
+
+                <div>
+                    <b>Community first</b>
+                    <small>Built around people and purpose.</small>
+                </div>
+            </div>
+
+        </section>
+
+        </div>
+
+        
+        <section class="product-page" id="productPage" hidden aria-live="polite"></section>
+
+        
+        <section class="newsletter-section">
+
+            <div class="newsletter-copy">
+
+                <p class="eyebrow">
+                    STAY IN THE LOOP / 004
+                </p>
+
+                <h2>
+                    Good things<br>are <em>coming.</em>
+                </h2>
+
+                <p>
+                    Get first access to new drops,
+                    community stories and special releases.
+                </p>
+
+            </div>
+
+            <form id="newsletterForm" class="newsletter-form">
+
+                <label for="newsletterEmail">
+                    YOUR EMAIL ADDRESS
+                </label>
+
+                <div class="newsletter-input">
+
+                    <input
+                        id="newsletterEmail"
+                        type="email"
+                        placeholder="you@example.com"
+                        required
+                    >
+
+                    <button type="submit">
+                        JOIN THE LIST
+                    </button>
+
+                </div>
+
+                <small id="newsletterMessage">
+                    By subscribing, you agree to receive
+                    DeLEGACY updates. Unsubscribe anytime.
+                </small>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    
+    <footer class="site-footer">
+
+        <div class="footer-top">
+
+            <a class="brand footer-brand" href="#top">
+
+                <span class="brand-mark brand-mark-image">
+                    <img src="./dl-logo.png" alt="DL logo">
+                </span>
+
+                <span class="brand-word">
+                    DELEGACY
+                    <small>MOVE WITH PURPOSE</small>
+                </span>
+
+            </a>
+
+            <p>
+                LOCAL ROOTS.<br>
+                MODERN MINDS.<br>
+                <strong>BIGGER DREAMS.</strong>
+            </p>
+
+            <div class="footer-links">
+                <a href="#shop" data-scroll="shop">Shop all</a>
+                <a href="#vests" data-scroll="vests">Vests</a>
+                <a href="#tees" data-scroll="tees">Tees</a>
+                <a href="#story">Our story</a>
+                <a href="#faq">FAQs</a>
+                <a href="mailto:hello@delegacystore.co.za" id="footerEmail">Contact</a>
+                <a href="./admin.html">Admin</a>
+            </div>
+
+            <div class="footer-social">
+
+                <a
+                    id="footerInstagram"
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    INSTAGRAM
+                </a>
+
+                <a
+                    id="footerWhatsapp"
+                    href="#"
+                    target="_blank"
+                    rel="noopener"
+                    hidden
+                >
+                    WHATSAPP
+                </a>
+
+                <a href="#community">
+                    COMMUNITY
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <span>
+                © <span id="yearNow"></span>
+                DELEGACY. ALL RIGHTS RESERVED.
+            </span>
+
+            <div>
+                <a href="#privacy" data-policy="privacy">Privacy</a>
+                <a href="#terms" data-policy="terms">Terms</a>
+                <a href="#returns" data-policy="returns">Returns</a>
+            </div>
+
+            <span id="footerStatement">
+                BUILT WITH PURPOSE <b>DL</b>
+            </span>
+
+        </div>
+
+    </footer>
+
+    
+    <div class="overlay" id="overlay"></div>
+
+    
+    <aside
+        class="side-drawer"
+        id="cartDrawer"
+        aria-label="Shopping bag"
+        aria-hidden="true"
+    >
+
+        <div class="drawer-head">
+
+            <div>
+                <p class="eyebrow dark-eyebrow">
+                    YOUR SELECTION
+                </p>
+
+                <h3>
+                    Your bag <span id="drawerCount">(0)</span>
+                </h3>
+            </div>
+
+            <button class="close-btn" data-close="cartDrawer">
+                ✕
+            </button>
+
+        </div>
+
+        <div class="drawer-items" id="cartItems"></div>
+
+        <div class="drawer-foot">
+
+            <div class="shipping-progress" id="shippingProgress">
+                You're getting closer to complimentary delivery.
+            </div>
+
+            <div class="subtotal-row">
+                <span>Subtotal</span>
+                <strong id="cartSubtotal">R0</strong>
+            </div>
+
+            <small>
+                Shipping and discounts calculated at checkout.
+            </small>
+
+            <button class="button button-dark full-btn" id="checkoutBtn">
+                Continue to checkout
+            </button>
+
+            <button class="text-btn centered" data-close="cartDrawer">
+                Continue shopping
+            </button>
+
+        </div>
+
+    </aside>
+
+    
+    <aside
+        class="side-drawer"
+        id="wishlistDrawer"
+        aria-label="Wishlist"
+        aria-hidden="true"
+    >
+
+        <div class="drawer-head">
+
+            <div>
+                <p class="eyebrow dark-eyebrow">
+                    SAVED FOR LATER
+                </p>
+
+                <h3>Your wishlist</h3>
+            </div>
+
+            <button class="close-btn" data-close="wishlistDrawer">
+                ✕
+            </button>
+
+        </div>
+
+        <div class="drawer-items" id="wishlistItems"></div>
+
+    </aside>
+
+    
+    <aside
+        class="side-drawer"
+        id="accountDrawer"
+        aria-label="Your account"
+        aria-hidden="true"
+    >
+
+        <div class="drawer-head">
+
+            <div>
+                <p class="eyebrow dark-eyebrow">
+                    WELCOME TO DL
+                </p>
+
+                <h3>Your account</h3>
+            </div>
+
+            <button class="close-btn" data-close="accountDrawer">
+                ✕
+            </button>
+
+        </div>
+
+        <div id="accountContent" class="account-content">
+
+            <p>
+                Sign in to view your orders and keep your
+                favourite pieces close.
+            </p>
+
+            <form id="loginForm" class="stack-form">
+
+                <label>
+                    Email
+                    <input type="email" id="loginEmail" required>
+                </label>
+
+                <label>
+                    Password
+                    <input
+                        type="password"
+                        id="loginPassword"
+                        required
+                        minlength="6"
+                    >
+                </label>
+
+                <button class="button button-dark full-btn" type="submit">
+                    Sign in
+                </button>
+
+            </form>
+
+            <button type="button" class="text-btn" id="forgotPassword">
+                Forgot password?
+            </button>
+
+            <p class="or-line">
+                NEW TO DELEGACY?
+            </p>
+
+            <button class="outline-btn full-btn" id="showRegister">
+                Create an account
+            </button>
+
+        </div>
+
+    </aside>
+
+    
+    <div
+        class="modal-wrap"
+        id="checkoutModal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="checkoutTitle"
+    >
+
+        <div class="modal-backdrop" data-modal-close></div>
+
+        <div class="modal-card checkout-modal">
+
+            <button class="modal-close" data-modal-close aria-label="Close">
+                ✕
+            </button>
+
+            <div id="checkoutContent"></div>
+
+        </div>
+
+    </div>
+
+    
+    <div
+        class="modal-wrap"
+        id="sizeGuideModal"
+        role="dialog"
+        aria-modal="true"
+    >
+
+        <div class="modal-backdrop" data-modal-close></div>
+
+        <div class="modal-card guide-modal">
+
+            <button class="modal-close" data-modal-close aria-label="Close">
+                ✕
+            </button>
+
+            <p class="eyebrow dark-eyebrow">
+                FIND YOUR FIT
+            </p>
+
+            <h2>Size guide</h2>
+
+            <p>
+                Use this as a general guide until the final
+                garment measurements are added.
+            </p>
+
+            <div class="size-table">
+
+                <div>
+                    <b>Size</b>
+                    <b>Chest (cm)</b>
+                    <b>Waist (cm)</b>
+                </div>
+
+                <div>
+                    <span>XS</span>
+                    <span>78–86</span>
+                    <span>63–71</span>
+                </div>
+
+                <div>
+                    <span>S</span>
+                    <span>86–94</span>
+                    <span>71–79</span>
+                </div>
+
+                <div>
+                    <span>M</span>
+                    <span>94–102</span>
+                    <span>79–87</span>
+                </div>
+
+                <div>
+                    <span>L</span>
+                    <span>102–110</span>
+                    <span>87–95</span>
+                </div>
+
+                <div>
+                    <span>XL</span>
+                    <span>110–118</span>
+                    <span>95–103</span>
+                </div>
+
+                <div>
+                    <span>XXL</span>
+                    <span>118–126</span>
+                    <span>103–111</span>
+                </div>
+
+            </div>
+
+            <small>
+                Illustrative measurements only.
+                Confirm each product's actual size chart before launch.
+            </small>
+
+        </div>
+
+    </div>
+
+    
+    <div
+        class="modal-wrap"
+        id="infoModal"
+        role="dialog"
+        aria-modal="true"
+    >
+
+        <div class="modal-backdrop" data-modal-close></div>
+
+        <div class="modal-card guide-modal">
+
+            <button class="modal-close" data-modal-close aria-label="Close">
+                ✕
+            </button>
+
+            <div id="infoContent"></div>
+
+        </div>
+
+    </div>
+
+    
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    
+    <div class="cookie-banner" id="cookieBanner">
+
+        <p>
+            We use essential browser storage to keep your bag
+            and preferences. Optional analytics can be connected
+            when the store launches.
+        </p>
+
+        <button id="cookieAccept">
+            Got it
+        </button>
+
+    </div>
+
+    
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-storage-compat.js"></script>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>emailjs.init({publicKey:"wuXZsGHjcpgvlQqE0"});</script>
+    <script src="./firebase-config.js"></script>
+    <script src="./store-data.js"></script>
+    <script src="./app.js"></script>
+
+</body>
+</html>
