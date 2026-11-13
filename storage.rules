@@ -1,0 +1,15 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    function isAdmin() {
+      return request.auth != null
+        && request.auth.token.email == 'tltech353@gmail.com';
+    }
+
+    // Product images and media can be viewed by shoppers; only the admin can manage files.
+    match /products/{allPaths=**} {
+      allow read: if true;
+      allow write: if isAdmin() && (request.resource == null || (request.resource.size < 8 * 1024 * 1024 && request.resource.contentType.matches('image/.*')));
+    }
+  }
+}
